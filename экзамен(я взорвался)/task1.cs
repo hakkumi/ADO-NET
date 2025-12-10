@@ -30,7 +30,7 @@ class Program
         table.Columns.Add("Age", typeof(int));
 
         using StreamReader reader = new StreamReader(csvFilePath);
-        reader.ReadLine(); // пропуск заголовка
+        reader.ReadLine();
 
         while (!reader.EndOfStream)
         {
